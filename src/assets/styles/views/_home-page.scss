@@ -1,0 +1,25 @@
+.home-page {
+    .header {
+        display: flex;
+        width: 450px;
+        text-align: center;
+        & > * {
+            padding: 20px;
+        }
+    }
+    .bids > * {
+        padding: 9px;
+        background-color: rgb(175, 95, 95);
+    }
+    .asks > * {
+        padding: 9px;
+        background-color: rgb(225, 250, 215);
+
+    }
+    .ask-and-qty {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        //width: 400px;
+    }
+}
