@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-
-
 export function HomePage() {
   const [bids, setBids] = useState(['']);
   const [asks, setAsks] = useState(['']);
@@ -23,7 +21,7 @@ export function HomePage() {
     data: { channel: "order_book_btcusd" },
   };
 
-  ws.onopen = (event) => {
+  ws.onopen = () => {
     ws.send(JSON.stringify(apiCall));
   };
 
